@@ -1,0 +1,549 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Portfolio-Eric Zhong</title>
+    <meta name="description" content="An aesthetic, single-page and detailed portfolio for Eric Zhong. 2018.">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <style>
+  /* @font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  } */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 0px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  .bold {
+    font-weight:bold;
+  }
+
+  h6 span {
+    width: 20px;
+    margin-bottom: -1px;
+    height: 2px;
+    background: black;
+    opacity: 0;
+    display: inline-block;
+  }
+  </style>
+  <body>
+    <nav>
+     <div class="nav-wrapper">
+       <a class="brand-logo"></a>
+       <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+       <ul class="right">
+         <li><a class="transparent" id="goaboutme" href="#aboutme"><i class="material-icons">person</i></a></li>
+         <!-- <li><a class="transparent" id="goschool" href="#school"><i class="material-icons">school</i></a></li> -->
+         <li><a class="transparent" id="goprojects" href="#projects"><i class="material-icons">work</i></a></li>
+         <li><a class="transparent" id="gocontact" href="#contact"><i class="material-icons">email</i></a></li>
+       </ul>
+     </div>
+   </nav>
+
+   <!-- <ul class="sidenav" id="mobile-demo">
+     <li><a href="#aboutme"><i class="material-icons">person</i></a></li>
+     <li><a id="goschool" href="#school"><i class="material-icons">school</i></a></li>
+     <li><a id="goprojects" href="#projects"><i class="material-icons">work</i></a></li>
+     <li><a id="gocontact" href="#contact"><i class="material-icons">email</i></a></li>
+   </ul> -->
+
+    <div class="container-fluid">
+      <div class="about">
+        <h3 class="w3-center bold">Hi, I'm Eric Zhong</h3>
+        <h4 class="w3-center">Welcome to my portfolio. Scroll at your heart's desire.</h4>
+      </div>
+
+      <div>
+        <div class="row">
+          <div class="w3-center">
+              <a href="mailto:ezhong1900@gmail.com" target="_blank"><i class="material-icons">email</i></a>
+              <!-- <a href=""><i class="material-icons" ></i></a> -->
+              <a href="https://twitter.com/_ericzhong" target="_blank"><img src="twitter.png" style="height: 25px; width: 25px; margin-bottom: 18px;"></a>
+              <a href="https://www.linkedin.com/in/eric-zhong/" target="_blank"><img src="linkedin.png" style="height: 20px; width: 20px; margin-bottom: 18px;"></a>
+              <a href="https://github.com/zhongeric" target="_blank"><img src="github.png" style="height: 25px; width: 25px; margin-bottom: 18px;"></a>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <div id="aboutme">
+        <div class="row">
+          <hr>
+          <div class="aboutmedesc">
+            <h3 id="headline" class="bold">About Me</h3>
+            <h6>I Like <span></span></h6>
+            <!-- <h4>I do what I love: AI and iOS app development.</h4> -->
+          </div>
+          <!-- <hr> -->
+        </div>
+        <div class="row">
+          <div class="col-sm-5">
+            <!-- <div class="w3-container">
+              <h1 class="w3-center w3-animate-left">image</h1>
+            </div> -->
+            <h1 class="personalimg">
+                <img src="" class="img-thumbnail">
+            </h1>
+          </div>
+          <div class="col-sm-7">
+            <br>
+            <div class="amdesc1">
+              <h5>I'm a high school senior at International Academy East in Troy, MI. My potential majors include computer science and entrepreneurship.</h5>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-7">
+            <br>
+            <div class="amdesc2">
+              <h5>I'm an aspiring chef, so I love to eat and cook.</h5>
+              <h5>I'm also a sneakerhead, and run my own e-commerce business where I buy and sell limited edition shoes.</h5>
+              <h6><a id="show-shoes" onclick="showShoes()">More Details</a></h6>
+              <p id="hidden-shoes" style="display: none;">
+
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <!-- <div class="w3-container">
+              <h1 class="w3-center w3-animate-left">image</h1>
+            </div> -->
+            <h1 class="amimg1">
+                <img src="" class="img-thumbnail">
+            </h1>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5">
+            <!-- <div class="w3-container">
+              <h1 class="w3-center w3-animate-left">image</h1>
+            </div> -->
+            <h1 class="amimg2">
+                <img src="" class="img-thumbnail">
+            </h1>
+          </div>
+          <div class="col-sm-7">
+            <br>
+            <div class="amdesc2">
+              <h5>I'm also the co-owner of the Troy Youth All Star Chess Club (TYASCC), the largest chess club in Troy and co-teach free chess leassons at the public library. We've taught over 400 kids the basics of chess.</h5>
+              <h6><a id="show-chess" onclick="showChess()">More Details</a></h6>
+              <p id="hidden-chess" style="display: none;">
+                My dad founded the Troy Youth All-Star Chess Club (TYASCC) when I was six. Since then, my friend and I have run the club since we entered high school. Instead of competing for the tallest trophy at competitions, we aligned the club with our goal: to provide every kid with the opportunity to discover a love for chess. We knew that many people couldn’t afford a private tutor, so we taught free chess lessons at the public library. Our lessons are now official library-partnered activities, and we have taught over 400 kids the basics of chess. We’ve not only grown as teachers and individuals but have also learned the necessity to spread the opportunities that we’ve been given in life to others. We are also currently organizing lessons in libraries of socioeconomically disadvantaged communities around Troy such as Clawson, continuing our initial mission and our love for teaching.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-7">
+            <br>
+            <div class="amdesc3">
+              <h5>If you can't tell from this website, I like to code. Specifically, I'm fascinated by the field of AI and enjoy developing iOS apps to innovate how society benefits from AI.</h5>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <!-- <div class="w3-container">
+              <h1 class="w3-center w3-animate-left">image</h1>
+            </div> -->
+            <h1 class="amimg3">
+                <img src="" class="img-thumbnail">
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects">
+        <div class="row">
+          <hr>
+          <div class="rashiodesc">
+            <h3 id="headline" class="bold">Projects</h3>
+            <!-- <h4>I do what I love: AI and iOS app development.</h4> -->
+          </div>
+          <!-- <hr> -->
+        </div>
+        <div class="row rashio">
+          <div class="col-sm-4">
+            <!-- <div class="w3-container">
+              <h1 class="w3-center w3-animate-left">image</h1>
+            </div> -->
+            <h1 class="rashioimg">
+                <img src="rashio.png" class="img-thumbnail">
+            </h1>
+          </div>
+          <div class="col-sm-8">
+            <br>
+            <div class="rashiodesc">
+              <h3>Rashio.</h3>
+              <h4>The first iOS app to use machine learning in rash diagnosis.</h4>
+              <h6><a id="show-rashio" onclick="showRashio()">Read the Full Story</a></h6>
+              <br>
+              <div id="hidden-rashio" style="display: none;">
+                <p>Rashio is a groundbreaking application which allows users to diagnose and classify rashes anywhere, anytime. Using advanced machine learning models built and trained on thousands of images from medical databases, Rashio provides users with effective and informed diagnoses within seconds of rashes in the absence of professional medical care.
+                    I built Rashio from the ground up: from creating the neural net used for image processing, analysis, and the prediction to building the user interface. I not only learned a great deal about machine learning but also about mobile app development. This was my first ever project of this type - I had only worked with small portions of projects before, never combining them into a finished product. The project code can be found on my GitHub. The app is no longer being updated, but the last version on the app store is functional.</p>
+              </div>
+              <a href="https://itunes.apple.com/us/app/rashio/id1374604184?ls=1&mt=8" target="_blank">View on App Store</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row tripiq">
+          <div class="col-sm-8">
+            <br>
+            <div class="tripiqdesc">
+              <h3>TRIPIQ.</h3>
+              <h4>The first iOS app that uses AI to completely personalize your travel experience.</h4>
+              <h6><a id="show-tripiq" onclick="showTripiq()">Read the Full Story</a></h6>
+              <br>
+              <div id="hidden-tripiq" style="display: none;">
+                <p>I co-launched TRIPIQ with a friend in Cali to help users traverse the enormous mountain of data within the Travel Industry. From dozens of sites such as TripAdvisor, Yelp, and Google Maps to the millions of blogs, websites, and reviews, we’re submerged in data without the tools nor the time to get back to the surface. After all, it's 2018; vacationing shouldn’t be headache-inducing. So we did something new. Instead of throwing data at you, we listen to what you like and dislike. Regardless of what you need for a relaxing vacation: local coffee, restrictive dietary food, or balancing relaxing with exploring, TRIPIQ understands. And with artificial intelligence, TRIPIQ predicts the restaurants and attractions best tailored to your taste; because your vacation should be about you, not the amount of time you have for research. Elevator pitch aside, TRIPIQ is currently just a prototype. Working with my friend in California, we’ve added two more developers to the team. We’re now looking for seed funding, and pitching the prototype to investors.
+              </p>
+              </div>
+              <a> Coming Soon</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <!-- <div class="w3-container">
+              <h1 class="w3-center w3-animate-left">image</h1>
+            </div> -->
+            <h1 class="tripiqimg">
+                <img src="" class="img-thumbnail">
+            </h1>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row abab">
+          <div class="col-sm-4">
+            <!-- <div class="w3-container">
+              <h1 class="w3-center w3-animate-left">image</h1>
+            </div> -->
+            <h1 class="ababimg">
+                <img src="abab.png">
+            </h1>
+          </div>
+          <div class="col-sm-8">
+            <br>
+            <div class="ababdesc">
+              <h3>Assigned Beautiful at Birth (ABAB).</h3>
+              <h4>A clothing line tailored for trans individuals at non-tailored prices.</h4>
+              <h6><a id="show-abab" onclick="showAbab()">Read the Full Story</a></h6>
+              <br>
+              <div id="hidden-abab" style="display: none;">
+                <p>
+                  We started ABAB with one mission - to create clothing tailored for the trans community at affordable prices. We’ve begun crowdfunding online and in person at events to ensure that the 1.4 million trans adults in the U.S. can find and afford what I’ve taken for granted: well-fitting clothes.
+                </p>
+              </div>
+              <a href="https://www.ababclothing.com/" target="_blank">Website</a>
+            </div>
+          </div>
+
+        </div>
+        <hr>
+
+      </div>
+
+      <div id="contact">
+        <div class="row">
+          <div class="col-sm-5">
+              <a href="mailto:ezhong1900@gmail.com" target="_blank"><i class="material-icons">email</i></a>
+              <!-- <a href=""><i class="material-icons" ></i></a> -->
+              <a href="https://twitter.com/_ericzhong" target="_blank"><img src="twitter.png" style="height: 25px; width: 25px; margin-bottom: 18px;"></a>
+              <a href="https://www.linkedin.com/in/eric-zhong/" target="_blank"><img src="linkedin.png" style="height: 20px; width: 20px; margin-bottom: 18px;"></a>
+              <a href="https://github.com/zhongeric" target="_blank"><img src="github.png" style="height: 25px; width: 25px; margin-bottom: 18px;"></a>
+          </div>
+          <div class="col-sm-5">
+            <div class="w3-cetner">
+              <label>Copyright Eric Zhong 2018</label>
+            </div>
+          </div>
+          <div class="col-sm-5">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("#goaboutme").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+        $("#goschool").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+        $("#goprojects").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+        $("#gocontact").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+    });
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+    ScrollReveal().reveal('.aboutmedesc', {
+        delay: 250,
+        duration: 500,
+        reset: false
+    });
+    ScrollReveal().reveal('.personalimg', {
+        delay: 250,
+        duration: 500,
+        reset: false
+    });
+    ScrollReveal().reveal('.amdesc1', {
+        delay: 700,
+        duration: 500,
+        reset: false
+    });
+    ScrollReveal().reveal('.amimg1', {
+        delay: 250,
+        duration: 500,
+        reset: false
+    });
+    ScrollReveal().reveal('.amdesc2', {
+        delay: 700,
+        duration: 500,
+        reset: false
+    });
+    ScrollReveal().reveal('.amimg2', {
+        delay: 250,
+        duration: 500,
+        reset: false
+    });
+    ScrollReveal().reveal('.amdesc2', {
+        delay: 700,
+        duration: 500,
+        reset: false
+    });
+    ScrollReveal().reveal('.amimg3', {
+        delay: 250,
+        duration: 500,
+        reset: false
+    });
+    ScrollReveal().reveal('.amdesc3', {
+        delay: 700,
+        duration: 500,
+        reset: false
+    });
+    ScrollReveal().reveal('.rashioimg', {
+        delay: 250,
+        duration: 500,
+        reset: false
+    });
+    ScrollReveal().reveal('.rashiodesc', {
+        delay: 700,
+        duration: 500,
+        reset: false
+    });
+    ScrollReveal().reveal('.tripiqimg', {
+        delay: 250,
+        duration: 500,
+        reset: false
+    });
+    ScrollReveal().reveal('.tripiqdesc', {
+        delay: 700,
+        duration: 500,
+        reset: false
+    });
+
+    function showRashio(){
+      console.log("hi")
+      var x = document.getElementById("hidden-rashio");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+
+      var button = document.getElementById("show-rashio");
+      if (button.text === "Read the Full Story"){
+        button.text = "Hide Details"
+      }
+      else {
+        button.text = "Read the Full Story"
+      }
+
+    }
+
+    function showTripiq(){
+      console.log("hi")
+      var x = document.getElementById("hidden-tripiq");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+
+      var button = document.getElementById("show-tripiq");
+      if (button.text === "Read the Full Story"){
+        button.text = "Hide Details"
+      }
+      else {
+        button.text = "Read the Full Story"
+      }
+
+    }
+
+    function showAbab(){
+      console.log("hi")
+      var x = document.getElementById("hidden-abab");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+
+      var button = document.getElementById("show-abab");
+      if (button.text === "Read the Full Story"){
+        button.text = "Hide Details"
+      }
+      else {
+        button.text = "Read the Full Story"
+      }
+
+    }
+
+    function showChess(){
+      console.log("hi")
+      var x = document.getElementById("hidden-chess");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+
+      var button = document.getElementById("show-chess");
+      if (button.text === "More Details"){
+        button.text = "Hide Details"
+      }
+      else {
+        button.text = "More Details"
+      }
+
+    }
+
+    function showShoes(){
+      console.log("hi")
+      var x = document.getElementById("hidden-shoes");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+
+      var button = document.getElementById("show-shoes");
+      if (button.text === "More Details"){
+        button.text = "Hide Details"
+      }
+      else {
+        button.text = "More Details"
+      }
+
+    }
+    setInterval(function() {
+      $('span').animate({
+        opacity: 1
+      }, 600).animate({
+        opacity: 0
+      }, 600)
+    }, 1200);
+  </script>
+  </body>
+</html>
